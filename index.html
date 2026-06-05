@@ -199,23 +199,44 @@ strong {
 
 <body>
 
-  <script>
-const password = prompt("Veuillez saisir le mot de passe :");
-
-if (password !== "Organic2026") {
-  document.body.innerHTML = `
-    <div style="font-family:Arial,sans-serif;padding:60px;text-align:center;">
-      <h1>Accès refusé</h1>
-      <p>Mot de passe incorrect.</p>
-    </div>
-  `;
-}
-</script>
-
 <div class="container">
 
 <div class="brand-name">Organic Stories</div>
 <h1>Maquettes refonte e-commerce</h1>
+
+  <script>
+const password = prompt("Accès protégé - mot de passe :");
+
+if (password !== "Organic2026") {
+  document.documentElement.innerHTML = `
+  <html>
+    <head>
+      <title>Accès refusé</title>
+      <style>
+        body{
+          font-family:Arial,sans-serif;
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          height:100vh;
+          margin:0;
+          background:#fafafa;
+        }
+        .box{
+          text-align:center;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="box">
+        <h1>Accès refusé</h1>
+        <p>Mot de passe incorrect.</p>
+      </div>
+    </body>
+  </html>`;
+}
+</script>
+
 
 <div class="intro">
   <h3>Bienvenue</h3>
