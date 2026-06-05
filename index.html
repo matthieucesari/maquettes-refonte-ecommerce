@@ -11,7 +11,6 @@
 }
 
 body {
-  display: none;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background: #fafafa;
@@ -199,23 +198,6 @@ strong {
 </head>
 
 <body>
-<script>
-const password = prompt("Accès protégé - mot de passe :");
-
-if (password === "Refonte2026") {
-  document.body.style.display = "block";
-} else {
-  document.body.innerHTML = `
-    <div style="height:100vh;display:flex;justify-content:center;align-items:center;text-align:center;background:#fafafa;font-family:Arial,sans-serif;">
-      <div>
-        <h1>Accès refusé</h1>
-        <p>Mot de passe incorrect.</p>
-      </div>
-    </div>
-  `;
-  document.body.style.display = "block";
-}
-</script>
 
 <div class="container">
 
