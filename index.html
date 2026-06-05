@@ -199,6 +199,19 @@ strong {
 
 <body>
 
+  <script>
+const password = prompt("Veuillez saisir le mot de passe :");
+
+if (password !== "Organic2026") {
+  document.body.innerHTML = `
+    <div style="font-family:Arial,sans-serif;padding:60px;text-align:center;">
+      <h1>Accès refusé</h1>
+      <p>Mot de passe incorrect.</p>
+    </div>
+  `;
+}
+</script>
+
 <div class="container">
 
 <div class="brand-name">Organic Stories</div>
@@ -380,7 +393,7 @@ strong {
 </section>
 
 <div class="footer">
-  Maquettes refonte e-commerce - Organic Stories - espace de relecture
+  Maquettes refonte e-commerce - Organic Stories - Espace de relecture
 </div>
 
 </div>
