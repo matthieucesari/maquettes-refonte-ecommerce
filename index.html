@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maquettes refonte e-commerce</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fafafa;
+  color: #252525;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 28px 70px;
+}
+
+.brand-name {
+  color: #185F43;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 0 0 28px;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 0 0 20px;
+  color: #252525;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+
+p {
+  line-height: 1.5;
+  margin: 0;
+}
+
+.intro {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #ded7cf;
+  border-radius: 18px;
+  padding: 26px;
+  margin-bottom: 30px;
+}
+
+.section {
+  margin-top: 58px;
+  scroll-margin-top: 90px;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(250, 250, 250, 0.95);
+  padding: 14px 0;
+  margin-bottom: 20px;
+}
+
+.nav-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav a {
+  background: #ffffff;
+  color: #252525;
+  border: 1px solid #ded7cf;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav a:hover {
+  background: #185F43;
+  color: #ffffff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #ded7cf;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+.card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.card-content {
+  padding: 20px;
+  background: #f5efe7;
+}
+
+.card-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #252525;
+  margin-bottom: 18px;
+}
+
+.btn {
+  display: inline-block;
+  background: #185F43;
+  color: #ffffff;
+  padding: 11px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background: #0E3F2C;
+}
+
+.footer {
+  color: #6f6a64;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+@media(max-width:720px) {
+  .container {
+    padding: 28px 18px 50px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .intro {
+    padding: 22px;
+  }
+
+  .card img {
+    height: 210px;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+  <div class="brand-name">Organic Stories</div>
+  <h1>Maquettes refonte e-commerce</h1>
+
+  <div class="intro">
+    <h3>Bienvenue</h3>
+    <p>Bienvenue dans cet espace dédié à notre refonte e-commerce. Vous trouverez ci-dessous les différentes maquettes soumises à votre validation. Bonne lecture et merci par avance pour vos retours. </p>
+  </div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#homepages-desktop">🖥️ Homepages (desktop)</a>
+      <a href="#homepages-mobile">📱 Homepages (mobile)</a>
+      <a href="#fiches-produits">🛒 Fiches produits</a>
+      <a href="#page-de-marque">🏷️ Page de marque</a>
+    </div>
+  </nav>
+
+  <section class="section" id="homepages-desktop">
+    <h2>🖥️ Homepages (desktop)</h2>
+    <div class="grid">
+      <div class="card">
+        <a href="pdf/Favrichon - Page d'accueil - Desktop.pdf" target="_blank"><img src="images/Favrichon - Page d'accueil - Desktop.jpg" alt="Homepage Favrichon desktop"></a>
+        <div class="card-content"><div class="card-title">Favrichon</div><a class="btn" href="pdf/Favrichon - Page d'accueil - Desktop.pdf" target="_blank">Consulter</a></div>
+      </div>
+      <div class="card">
+        <a href="pdf/Prosain - Page d'accueil - Desktop.pdf" target="_blank"><img src="images/Prosain - Page d'accueil - Desktop.png" alt="Homepage Prosain desktop"></a>
+        <div class="card-content"><div class="card-title">Prosain</div><a class="btn" href="pdf/Prosain - Page d'accueil - Desktop.pdf" target="_blank">Consulter</a></div>
+      </div>
+      <div class="card">
+        <a href="pdf/Germline - Page d'accueil - Desktop.pdf" target="_blank"><img src="images/Germline - Page d'accueil - Desktop.png" alt="Homepage Germline desktop"></a>
+        <div class="card-content"><div class="card-title">Germline</div><a class="btn" href="pdf/Germline - Page d'accueil - Desktop.pdf" target="_blank">Consulter</a></div>
+      </div>
+      <div class="card">
+        <a href="pdf/Mon Epicerie Bio - Home - Desktop.pdf" target="_blank"><img src="images/Mon Epicerie Bio - Home - Desktop.png" alt="Homepage Mon Épicerie Bio desktop"></a>
+        <div class="card-content"><div class="card-title">Mon Épicerie Bio</div><a class="btn" href="pdf/Mon Epicerie Bio - Home - Desktop.pdf" target="_blank">Consulter</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="homepages-mobile">
+    <h2>📱 Homepages (mobile)</h2>
+    <div class="grid">
+      <div class="card">
+        <a href="pdf/Favrichon - Page d'accueil - Mobile.pdf" target="_blank"><img src="images/Favrichon - Page d'accueil - Mobile.jpg" alt="Homepage Favrichon mobile"></a>
+        <div class="card-content"><div class="card-title">Favrichon</div><a class="btn" href="pdf/Favrichon - Page d'accueil - Mobile.pdf" target="_blank">Consulter</a></div>
+      </div>
+      <div class="card">
+        <a href="pdf/Prosain - Page d'accueil - Mobile.pdf" target="_blank"><img src="images/Prosain - Page d'accueil - Mobile.png" alt="Homepage Prosain mobile"></a>
+        <div class="card-content"><div class="card-title">Prosain</div><a class="btn" href="pdf/Prosain - Page d'accueil - Mobile.pdf" target="_blank">Consulter</a></div>
+      </div>
+      <div class="card">
+        <a href="pdf/Germline - Page d'accueil - Mobile.pdf" target="_blank"><img src="images/Germline - Page d'accueil - Mobile.png" alt="Homepage Germline mobile"></a>
+        <div class="card-content"><div class="card-title">Germline</div><a class="btn" href="pdf/Germline - Page d'accueil - Mobile.pdf" target="_blank">Consulter</a></div>
+      </div>
+      <div class="card">
+        <a href="pdf/Mon Epicerie Bio - Home - Mobile.pdf" target="_blank"><img src="images/Mon Epicerie Bio - Home - Mobile.png" alt="Homepage Mon Épicerie Bio mobile"></a>
+        <div class="card-content"><div class="card-title">Mon Épicerie Bio</div><a class="btn" href="pdf/Mon Epicerie Bio - Home - Mobile.pdf" target="_blank">Consulter</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="fiches-produits">
+    <h2>🛒 Fiches produits</h2>
+    <div class="grid">
+      <div class="card">
+        <a href="pdf/Favrichon - Fiche produit - Desktop.pdf" target="_blank"><img src="images/Favrichon - Fiche produit - Desktop.jpg" alt="Fiche produit Favrichon desktop"></a>
+        <div class="card-content"><div class="card-title">Favrichon – Desktop</div><a class="btn" href="pdf/Favrichon - Fiche produit - Desktop.pdf" target="_blank">Consulter</a></div>
+      </div>
+      <div class="card">
+        <a href="pdf/Favrichon - Fiche produit - Mobile.pdf" target="_blank"><img src="images/Favrichon - Fiche produit - Mobile.jpg" alt="Fiche produit Favrichon mobile"></a>
+        <div class="card-content"><div class="card-title">Favrichon – Mobile</div><a class="btn" href="pdf/Favrichon - Fiche produit - Mobile.pdf" target="_blank">Consulter</a></div>
+      </div>
+      <div class="card">
+        <a href="pdf/Prosain - Fiche produit - Desktop.pdf" target="_blank"><img src="images/Prosain - Fiche produit - Desktop.png" alt="Fiche produit Prosain desktop"></a>
+        <div class="card-content"><div class="card-title">Prosain – Desktop</div><a class="btn" href="pdf/Prosain - Fiche produit - Desktop.pdf" target="_blank">Consulter</a></div>
+      </div>
+      <div class="card">
+        <a href="pdf/Prosain - Fiche produit - Mobile.pdf" target="_blank"><img src="images/Prosain - Fiche produit - Mobile.png" alt="Fiche produit Prosain mobile"></a>
+        <div class="card-content"><div class="card-title">Prosain – Mobile</div><a class="btn" href="pdf/Prosain - Fiche produit - Mobile.pdf" target="_blank">Consulter</a></div>
+      </div>
+      <div class="card">
+        <a href="pdf/Germline - Fiche produit - Desktop.pdf" target="_blank"><img src="images/Germline - Fiche produit - Desktop.png" alt="Fiche produit Germline desktop"></a>
+        <div class="card-content"><div class="card-title">Germline – Desktop</div><a class="btn" href="pdf/Germline - Fiche produit - Desktop.pdf" target="_blank">Consulter</a></div>
+      </div>
+      <div class="card">
+        <a href="pdf/Germline - Fiche produit - Mobile.pdf" target="_blank"><img src="images/Germline - Fiche produit - Mobile.png" alt="Fiche produit Germline mobile"></a>
+        <div class="card-content"><div class="card-title">Germline – Mobile</div><a class="btn" href="pdf/Germline - Fiche produit - Mobile.pdf" target="_blank">Consulter</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="page-de-marque">
+    <h2>🏷️ Page de marque</h2>
+    <div class="grid">
+      <div class="card">
+        <a href="pdf/Favrichon - Contenu - Desktop.pdf" target="_blank"><img src="images/Favrichon - Contenu - Desktop.png" alt="Page de marque Favrichon desktop"></a>
+        <div class="card-content"><div class="card-title">Favrichon – Desktop</div><a class="btn" href="pdf/Favrichon - Contenu - Desktop.pdf" target="_blank">Consulter</a></div>
+      </div>
+      <div class="card">
+        <a href="pdf/Favrichon - Contenu - Mobile.pdf" target="_blank"><img src="images/Favrichon - Contenu - Mobile.png" alt="Page de marque Favrichon mobile"></a>
+        <div class="card-content"><div class="card-title">Favrichon – Mobile</div><a class="btn" href="pdf/Favrichon - Contenu - Mobile.pdf" target="_blank">Consulter</a></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">Maquettes refonte e-commerce - Organic Stories - Espace de validation</div>
+</div>
+</body>
+</html>
